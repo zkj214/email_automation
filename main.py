@@ -10,9 +10,9 @@ APP_PASSWORD="gqee yzcx hqfh yqdy "
 
 
 def send_email():
-    with smtplib.SMTP("smtp.gmail.com",port=587) as connection:
+    with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
         connection.starttls()
-        connection.login(MY_EMAIL,APP_PASSWORD)
+        connection.login(MY_EMAIL, APP_PASSWORD)
         connection.sendmail(MY_EMAIL,
                             "alhaj.ziebhar214@gmail.com",
                             msg="Subject:Requesting Salary Raise\n\nI would like to request a raise for every 3 months. Hoping for your kind consideration.\nThanks.")
